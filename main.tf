@@ -26,7 +26,7 @@ module "networking" {
 }
   
 module "webserver" {
-  source  = "app.terraform.io/YOUR_ORG_NAME/webserver/azurerm"
+  source  = "app.terraform.io/training123/webserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -38,7 +38,7 @@ module "webserver" {
 }
 
 module "appserver" {
-  source  = "app.terraform.io/YOUR_ORG_NAME/appserver/azurerm"
+  source  = "app.terraform.io/training123/appserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -50,7 +50,7 @@ module "appserver" {
 }
 
 module "dataserver" {
-  source  = "app.terraform.io/YOUR_ORG_NAME/dataserver/azurerm"
+  source  = "app.terraform.io/training123/dataserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
